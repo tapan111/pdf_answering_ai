@@ -5,7 +5,7 @@ Please Follow instruction.txt for make model to work.
 
 This project is a Streamlit-based application that allows users to chat with multiple PDF documents. It uses FAISS for efficient document retrieval and a T5 model for generating responses. The PDF documents are processed, and the text is split into manageable chunks, vectorized, and stored in a FAISS index. Users can then ask questions, and the system retrieves relevant document sections to generate responses.
 
-![image](https://github.com/tapan111/pdf_answering_ai/assets/99003457/dc0d6e14-3eb7-416a-9953-7f6f8dacf4c0)
+![image](https://github.com/tapan111/pdf_answering_ai/assets/99003457/86311890-0799-4f90-9c76-41e5837a8001)
 
 
 ## Features
@@ -26,21 +26,20 @@ This project is a Streamlit-based application that allows users to chat with mul
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/tapan111/pdf_answering_ai.git
-   cd yourrepository
-
-2.Create a virtual environment and activate it:
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    bash
+    git clone https://github.com/tapan111/pdf_answering_ai.git
+    cd yourrepository
     
 
-3.Install the required packages:
+2. Create a virtual environment and activate it:
+    bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    
 
-```bash
-pip install -r requirements.txt
+3. Install the required packages:
+    bash
+    pip install -r requirements.txt
     
 
 4. Download the LaMini-T5-738M model and place it in your project directory:
@@ -54,12 +53,12 @@ pip install -r requirements.txt
     
 
 2. Open your web browser
-![image](https://github.com/tapan111/pdf_answering_ai/assets/99003457/70ef43cc-ee2c-485f-8a01-7cece06f800d)
+![image](https://github.com/tapan111/pdf_answering_ai/assets/99003457/4cffa772-e840-4ce4-a1a4-fa0101a9424e)
 
 
 
 4. Upload your PDF files using the sidebar, click "Process", and wait for processing to complete.
-  ![image](https://github.com/tapan111/pdf_answering_ai/assets/99003457/534ebf4e-38f7-4873-99e0-3ff5af09e31a)
+ ![image](https://github.com/tapan111/pdf_answering_ai/assets/99003457/166e3bd3-0a14-476a-bf52-59ef0dfc20a7)
 
 
 
@@ -74,7 +73,7 @@ pip install -r requirements.txt
 
 ## Code Explanation
 
-### bot.py
+### app.py
 
 - *FAISSRetriever Class*: Handles the retrieval of relevant documents from the FAISS index.
 - *get_pdf_text*: Extracts text from uploaded PDF files.
