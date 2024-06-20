@@ -3,23 +3,23 @@
 Please Follow instruction.txt for make model to work.
 # Chat with Multiple PDFs
 
-This project is a Streamlit-based application that allows users to chat with multiple PDF documents. It uses FAISS for efficient document retrieval and a T5 model for generating responses. The PDF documents are processed, and the text is split into manageable chunks, vectorized, and stored in a FAISS index. Users can then ask questions, and the system retrieves relevant document sections to generate responses.
+his project features a Streamlit-powered application enabling users to interact with numerous PDF files through a chat interface. It utilizes FAISS for optimized document retrieval and employs a T5 model to generate responses. The PDFs undergo processing where their text is segmented into smaller portions, vectorized, and indexed using FAISS. This setup enables users to pose questions, with the system retrieving pertinent sections from the documents to formulate responses.
 
 ![image](https://github.com/tapan111/pdf_answering_ai/assets/99003457/86311890-0799-4f90-9c76-41e5837a8001)
 
 
 ## Features
 
-- Upload and process multiple PDF files
-- Extract text from PDFs and split it into chunks
-- Vectorize text chunks using SentenceTransformers
-- Store and retrieve text chunks using FAISS
-- Generate responses using a local T5 model
-- Interactive chat interface with document preview
+This project facilitates the uploading and processing of multiple PDF files:
+Extracts text from PDFs and segments it into manageable chunks.
+Utilizes SentenceTransformers to vectorize the text chunks.
+Stores and retrieves these vectorized chunks using FAISS.
+Employs a local T5 model to generate responses.
+Offers an interactive chat interface with previews of the documents.
 
 ## Prerequisites
 
-- Python 3.7 or higher
+- Python 3.8 or higher
 
  Required Python packages (see requirements.txt)
 
@@ -67,26 +67,25 @@ This project is a Streamlit-based application that allows users to chat with mul
 
 ## File Structure
 
-- app.py: Main application code.
+- bot.py: Main application code.
 - Templates.py: HTML and CSS templates for the chat interface.
 - requirements.txt: List of required Python packages.
 
 ## Code Explanation
 
-### app.py
+### bot.py
 
-- *FAISSRetriever Class*: Handles the retrieval of relevant documents from the FAISS index.
+- *FAISSRetriever Class*: Manages the retrieval of pertinent documents from the FAISS index.
 - *get_pdf_text*: Extracts text from uploaded PDF files.
-- *get_text_chunks*: Splits extracted text into manageable chunks.
-- *get_vectorstore*: Vectorizes text chunks and stores them in a FAISS index.
-- *get_conversation_model*: Loads the local T5 model for generating responses.
-- *generate_response*: Generates a response to the user's query using the T5 model.
-- *main*: Streamlit app main function that handles file uploads, processing, and chat interface.
+- *get_text_chunks*: Divides extracted text into manageable segments.
+- *get_vectorstore*: Converts text chunks into vectors and stores them within a FAISS index.
+- *get_conversation_model*: Loads the local T5 model used for response generation.
+- *generate_response*: Utilizes the T5 model to produce responses based on user queries.
+- *main*: Central function of the Streamlit app responsible for handling file uploads, processing tasks, and managing the chat interface.
 
 ### Templates.py
 
-- *CSS and HTML Templates*: Contains the styles and structure for the chat interface, including user and bot message templates and the PDF preview window.
-- *render_pdf*: Function to render PDF files in an iframe for preview.
+- *CSS and HTML Templates*: This section encompasses the style definitions and structural elements required for the chat interface. It includes templates for both user and bot messages, as well as the PDF preview window.
 
 
 ## Acknowledgements
