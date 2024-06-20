@@ -26,19 +26,19 @@ This project is a Streamlit-based application that allows users to chat with mul
 ## Installation
 
 1. Clone the repository:
-    bash
+    ```bash
     git clone https://github.com/tapan111/pdf_answering_ai.git
     cd yourrepository
     
 
 2. Create a virtual environment and activate it:
-    bash
+    ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     
 
 3. Install the required packages:
-    bash
+    ```bash
     pip install -r requirements.txt
     
 
@@ -95,5 +95,6 @@ This project is a Streamlit-based application that allows users to chat with mul
 - [SentenceTransformers](https://www.sbert.net/)
 - [FAISS](https://faiss.ai/)
 - [Hugging Face](https://huggingface.co/)
+
 
 
